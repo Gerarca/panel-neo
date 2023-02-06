@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="DSC_Types.hpp" />
+    <ClInclude Include="DSC_Config.hpp" />
+    <ClInclude Include="Security\DSC_ISecurityBase.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IPartitionManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IDataStore.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IComponent.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IChannel.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IBlockCipher.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IBase.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_Parameters.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_CipherTypes.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="DSC_IInteractive.hpp" />
+    <ClInclude Include="Common\DSC_IProtocolData.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IDataBuffer.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ITextString.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IZoneManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAccessCodeManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IPartitionStateData.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAccessCodeAttributes.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionQuickExitStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionReadyStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionArmedStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionBlankStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionTroubleStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionBypassStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionAlarmStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionBusyStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionAudibleBellStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionAudibleBellTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneAlarmInMemoryStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneAlarmStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneBypassStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneFaultStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneOpenCloseStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneTamperStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneLowBatteryStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneLowSensitivityStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneDelinquencyStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISystemManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISystemManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionBuzzerStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ChannelStates.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionAlarmMemoryStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAccessCode.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IPartition.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IZone.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_SecurityEventCategories.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_SecurityDataSelectors.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="DSC_WinDLL.hpp" />
+    <ClInclude Include="DSC_WinLIB.hpp" />
+    <ClInclude Include="Security\DSC_AccessCredentialsTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAccessCredentials.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ChannelErrors.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesBellSquawkStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesCanBypassZoneStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesDuressCodeStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesOneTimeUseStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesSupervisorStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AccessCodeAttributesRemoteAccessStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionEntryDelayStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_PartitionExitDelayStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_FAPTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_DoorChimeEnabledStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_CommandOutputStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IVirtualZone.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IVirtualZoneManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IVirtualZoneStatus.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IZoneAttributes.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusACTroubleStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusFaultStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusLowBatteryStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusOpenStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusTamperStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneAttributesBypassEnableStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneAttributesChimeFunctionStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISystemManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_DataContainers.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ProtocolTypes.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_SecurityEventTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ChannelEvents.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ISystemIndices.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IProgrammingDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IRequestResult.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_RequestResultCodes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ILicenseManager.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ProgrammingModes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ProgrammingSources.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ProgrammingStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IKeyPressedDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ILCDCursorDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ILCDUpdateDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ILEDStatusDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IVirtualKeypadManager.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_CursorTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualKeypadKeys.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualKeypadModes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IBuzzerDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IVirtualKeypad.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualKeypadTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_TextAttributes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_LEDTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_LEDCadences.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISpecificFunctions.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_PacketStates.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AlarmTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAlarmTypeContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IRepository.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISystemCapabilities.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISystemInformation.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AssignmentStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_AssignmentTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAssignmentData.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IAssignmentList.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_CommandOutputReportingStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_VirtualZoneStatusMaskedStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ZoneMaskedStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ICommandOutputDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_IEventBufferEntryDataContainer.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IChannelEventSink.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ISecurityEventSink.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ILifeStyleSettings.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_LifeStyleNotifications.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_DeviceModuleTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_TroubleStates.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_TroubleTypes.hpp">
+      <Filter>Security\Enums</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ITroubleData.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Security\DSC_ITroubleList.hpp">
+      <Filter>Security</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_IDiagnostics.hpp">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DSC_ObjectTypes.hpp">
+      <Filter>Common\Enums</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{73b8cdcf-1b91-4c53-9661-0488560d0e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security">
+      <UniqueIdentifier>{5301c4a1-1424-49c7-832e-55d322533e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Enums">
+      <UniqueIdentifier>{897bc1be-0d11-4c1b-888b-204b8d52a375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Security\Enums">
+      <UniqueIdentifier>{d4c43ace-8541-41f0-a892-020328e2bfee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DSC_IInteractive.cpp" />
+  </ItemGroup>
+</Project>

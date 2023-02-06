@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{20BAD255-5153-458C-8D28-1C1C1A65530B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>TestApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TestApp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x86\</OutDir>
+    <IntDir>$(Configuration)\2017\x86\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x64\</OutDir>
+    <IntDir>$(Configuration)\2017\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x86\</OutDir>
+    <IntDir>$(Configuration)\2017\x86\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x64\</OutDir>
+    <IntDir>$(Configuration)\2017\x64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;MS_VS_COMPILER;WINDOWS;_WINDLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\;$(SolutionDir)InteractiveSDK\;$(ProjectDir);$(ProjectDir)Common\;$(ProjectDir)Helpers\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;$(OutDir)InteractiveSDK_WinDLL.lib;</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)Libraries\Windows\2017\x86\*.dll" "$(SolutionDir)Bin_Windows\2017\x86" /Y
+copy "$(SolutionDir)Libraries\Windows\2017\x86\*.lib" "$(SolutionDir)Bin_Windows\2017\x86"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;MS_VS_COMPILER;WINDOWS;_WINDLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\;$(SolutionDir)InteractiveSDK\;$(ProjectDir);$(ProjectDir)Common\;$(ProjectDir)Helpers\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;$(OutDir)InteractiveSDK_WinDLL.lib;</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)Libraries\Windows\2017\x64\*.dll" "$(SolutionDir)Bin_Windows\2017\x64" /Y
+copy "$(SolutionDir)Libraries\Windows\2017\x64\*.lib" "$(SolutionDir)Bin_Windows\2017\x64"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;MS_VS_COMPILER;WINDOWS;_WINDLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\;$(SolutionDir)InteractiveSDK\;$(ProjectDir);$(ProjectDir)Common\;$(ProjectDir)Helpers\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;$(OutDir)InteractiveSDK_WinDLL.lib;</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)Libraries\Windows\2017\x86\*.dll" "$(SolutionDir)Bin_Windows\2017\x86" /Y
+copy "$(SolutionDir)Libraries\Windows\2017\x86\*.lib" "$(SolutionDir)Bin_Windows\2017\x86"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;MS_VS_COMPILER;WINDOWS;_WINDLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\;$(SolutionDir)InteractiveSDK\;$(ProjectDir);$(ProjectDir)Common\;$(ProjectDir)Helpers\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;$(OutDir)InteractiveSDK_WinDLL.lib;</AdditionalDependencies>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy "$(SolutionDir)Libraries\Windows\2017\x64\*.dll" "$(SolutionDir)Bin_Windows\2017\x64" /Y
+copy "$(SolutionDir)Libraries\Windows\2017\x64\*.lib" "$(SolutionDir)Bin_Windows\2017\x64"</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Application_EventSinks.cpp" />
+    <ClCompile Include="Application_Handlers.cpp" />
+    <ClCompile Include="Application_UI.cpp" />
+    <ClCompile Include="Common\Component.cpp" />
+    <ClCompile Include="Common\Debug.cpp" />
+    <ClCompile Include="Common\EndianHelper.cpp" />
+    <ClCompile Include="Common\Exception.cpp" />
+    <ClCompile Include="Common\HexHelper.cpp" />
+    <ClCompile Include="Common\Lock.cpp" />
+    <ClCompile Include="Common\ParamParser.cpp" />
+    <ClCompile Include="Common\Platform.cpp" />
+    <ClCompile Include="Common\StringComparer.cpp" />
+    <ClCompile Include="Common\TextString.cpp" />
+    <ClCompile Include="Common\Thread.cpp" />
+    <ClCompile Include="Common\Tokenizer.cpp" />
+    <ClCompile Include="Common\UInt16Map.cpp" />
+    <ClCompile Include="Helpers\Account.cpp" />
+    <ClCompile Include="Helpers\AddressInfo.cpp" />
+    <ClCompile Include="Helpers\DataStore.cpp" />
+    <ClCompile Include="Helpers\Serial.cpp" />
+    <ClCompile Include="Helpers\SerialPort.cpp" />
+    <ClCompile Include="Helpers\SessionData.cpp" />
+    <ClCompile Include="Helpers\SessionKey.cpp" />
+    <ClCompile Include="Helpers\Socket.cpp" />
+    <ClCompile Include="Helpers\TCPClient.cpp" />
+    <ClCompile Include="Helpers\TCPProxy.cpp" />
+    <ClCompile Include="Helpers\TCPServer.cpp" />
+    <ClCompile Include="Helpers\TcpUdpBase.cpp" />
+    <ClCompile Include="Helpers\UDPPoint.cpp" />
+    <ClCompile Include="TestApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Application_UI.h" />
+    <ClInclude Include="Common\Component.hpp" />
+    <ClInclude Include="Common\Debug.hpp" />
+    <ClInclude Include="Common\EndianHelper.hpp" />
+    <ClInclude Include="Common\Exception.hpp" />
+    <ClInclude Include="Common\HexHelper.hpp" />
+    <ClInclude Include="Common\Lock.hpp" />
+    <ClInclude Include="Common\ParamParser.hpp" />
+    <ClInclude Include="Common\Platform.hpp" />
+    <ClInclude Include="Common\StringComparer.hpp" />
+    <ClInclude Include="Common\TArray.hpp" />
+    <ClInclude Include="Common\TComparer.hpp" />
+    <ClInclude Include="Common\TComPtr.hpp" />
+    <ClInclude Include="Common\TDictionary.hpp" />
+    <ClInclude Include="Common\TextString.hpp" />
+    <ClInclude Include="Common\Thread.hpp" />
+    <ClInclude Include="Common\TKeyValue.hpp" />
+    <ClInclude Include="Common\TList.hpp" />
+    <ClInclude Include="Common\TMemPtr.hpp" />
+    <ClInclude Include="Common\Tokenizer.hpp" />
+    <ClInclude Include="Common\TTypeHelp.hpp" />
+    <ClInclude Include="Common\UInt16Map.hpp" />
+    <ClInclude Include="Helpers\Account.h" />
+    <ClInclude Include="Helpers\AddressInfo.h" />
+    <ClInclude Include="Helpers\DataStore.h" />
+    <ClInclude Include="Helpers\IEventHandler.hpp" />
+    <ClInclude Include="Helpers\Serial.h" />
+    <ClInclude Include="Helpers\SerialEventArgs.h" />
+    <ClInclude Include="Helpers\SerialPort.h" />
+    <ClInclude Include="Helpers\SessionData.h" />
+    <ClInclude Include="Helpers\SessionKey.h" />
+    <ClInclude Include="Helpers\Socket.h" />
+    <ClInclude Include="Helpers\SocketEventArgs.h" />
+    <ClInclude Include="Helpers\TCPClient.h" />
+    <ClInclude Include="Helpers\TCPProxy.h" />
+    <ClInclude Include="Helpers\TCPServer.h" />
+    <ClInclude Include="Helpers\TcpUdpBase.h" />
+    <ClInclude Include="Helpers\TEvent.hpp" />
+    <ClInclude Include="Helpers\TEventHandler.hpp" />
+    <ClInclude Include="Helpers\TProperty.hpp" />
+    <ClInclude Include="Helpers\UDPPoint.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

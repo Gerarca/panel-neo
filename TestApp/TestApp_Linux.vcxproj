@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{14eced0c-0096-402f-97fe-7cc67e6efb2b}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>TestApp_Linux</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>TestApp</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <UseOfStl>libstdc++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)Bin_Linux\ARM\</OutDir>
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin_Linux\x64\</OutDir>
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionDir)Bin_Linux\x86\</OutDir>
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionDir)Bin_Linux\x86\</OutDir>
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <OutDir>$(SolutionDir)Bin_Linux\ARM\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <OutDir>$(SolutionDir)Bin_Linux\x64\</OutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="Application_EventSinks.cpp" />
+    <ClCompile Include="Application_Handlers.cpp" />
+    <ClCompile Include="Application_UI.cpp" />
+    <ClCompile Include="Common\Component.cpp" />
+    <ClCompile Include="Common\Debug.cpp" />
+    <ClCompile Include="Common\EndianHelper.cpp" />
+    <ClCompile Include="Common\Exception.cpp" />
+    <ClCompile Include="Common\HexHelper.cpp" />
+    <ClCompile Include="Common\Lock.cpp" />
+    <ClCompile Include="Common\ParamParser.cpp" />
+    <ClCompile Include="Common\Platform.cpp" />
+    <ClCompile Include="Common\StringComparer.cpp" />
+    <ClCompile Include="Common\TextString.cpp" />
+    <ClCompile Include="Common\Thread.cpp" />
+    <ClCompile Include="Common\Tokenizer.cpp" />
+    <ClCompile Include="Common\UInt16Map.cpp" />
+    <ClCompile Include="Common\UtfConverter.cpp" />
+    <ClCompile Include="Helpers\Account.cpp" />
+    <ClCompile Include="Helpers\AddressInfo.cpp" />
+    <ClCompile Include="Helpers\DataStore.cpp" />
+    <ClCompile Include="Helpers\LinuxIO.cpp" />
+    <ClCompile Include="Helpers\SessionData.cpp" />
+    <ClCompile Include="Helpers\SessionKey.cpp" />
+    <ClCompile Include="Helpers\Socket.cpp" />
+    <ClCompile Include="Helpers\TCPClient.cpp" />
+    <ClCompile Include="Helpers\TCPProxy.cpp" />
+    <ClCompile Include="Helpers\TCPServer.cpp" />
+    <ClCompile Include="Helpers\TcpUdpBase.cpp" />
+    <ClCompile Include="Helpers\UDPPoint.cpp" />
+    <ClCompile Include="TestApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="Application_UI.h" />
+    <ClInclude Include="Common\Component.hpp" />
+    <ClInclude Include="Common\Debug.hpp" />
+    <ClInclude Include="Common\EndianHelper.hpp" />
+    <ClInclude Include="Common\Exception.hpp" />
+    <ClInclude Include="Common\HexHelper.hpp" />
+    <ClInclude Include="Common\Lock.hpp" />
+    <ClInclude Include="Common\ParamParser.hpp" />
+    <ClInclude Include="Common\Platform.hpp" />
+    <ClInclude Include="Common\StringComparer.hpp" />
+    <ClInclude Include="Common\TArray.hpp" />
+    <ClInclude Include="Common\TComparer.hpp" />
+    <ClInclude Include="Common\TComPtr.hpp" />
+    <ClInclude Include="Common\TDictionary.hpp" />
+    <ClInclude Include="Common\TextString.hpp" />
+    <ClInclude Include="Common\Thread.hpp" />
+    <ClInclude Include="Common\TKeyValue.hpp" />
+    <ClInclude Include="Common\TList.hpp" />
+    <ClInclude Include="Common\TMemPtr.hpp" />
+    <ClInclude Include="Common\Tokenizer.hpp" />
+    <ClInclude Include="Common\TTypeHelp.hpp" />
+    <ClInclude Include="Common\UInt16Map.hpp" />
+    <ClInclude Include="Common\UtfConverter.hpp" />
+    <ClInclude Include="Helpers\Account.h" />
+    <ClInclude Include="Helpers\AddressInfo.h" />
+    <ClInclude Include="Helpers\DataStore.h" />
+    <ClInclude Include="Helpers\IEventHandler.hpp" />
+    <ClInclude Include="Helpers\LinuxIO.h" />
+    <ClInclude Include="Helpers\SessionData.h" />
+    <ClInclude Include="Helpers\SessionKey.h" />
+    <ClInclude Include="Helpers\Socket.h" />
+    <ClInclude Include="Helpers\SocketEventArgs.h" />
+    <ClInclude Include="Helpers\TCPClient.h" />
+    <ClInclude Include="Helpers\TCPProxy.h" />
+    <ClInclude Include="Helpers\TCPServer.h" />
+    <ClInclude Include="Helpers\TcpUdpBase.h" />
+    <ClInclude Include="Helpers\TEvent.hpp" />
+    <ClInclude Include="Helpers\TEventHandler.hpp" />
+    <ClInclude Include="Helpers\TProperty.hpp" />
+    <ClInclude Include="Helpers\UDPPoint.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;../InteractiveSDK_LinuxLIB;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <ShowProgress>false</ShowProgress>
+    </Link>
+    <Link>
+      <VerboseOutput>false</VerboseOutput>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Bin_Linux;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;../InteractiveSDK_LinuxLIB;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+    <Link>
+      <ShowProgress>false</ShowProgress>
+    </Link>
+    <Link>
+      <VerboseOutput>false</VerboseOutput>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Bin_Linux/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;../InteractiveSDK_LinuxLIB;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wpedantic %(AdditionalOptions)</AdditionalOptions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+    </ClCompile>
+    <Link>
+      <ShowProgress>false</ShowProgress>
+    </Link>
+    <Link>
+      <VerboseOutput>false</VerboseOutput>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Bin_Linux;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;../InteractiveSDK_LinuxLIB;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <Optimization>MinSize</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalOptions>-Wpedantic %(AdditionalOptions)</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <VerboseOutput>false</VerboseOutput>
+    </Link>
+    <Link>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Bin_Linux;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Link>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;../InteractiveSDK_LinuxLIB;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Verbose>true</Verbose>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSize</Optimization>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+      <VerboseOutput>false</VerboseOutput>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Bin_Linux;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;./Helpers;./Common;./;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Verbose>true</Verbose>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSize</Optimization>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>InteractiveSDK;pthread</LibraryDependencies>
+      <VerboseOutput>false</VerboseOutput>
+      <AdditionalLibraryDirectories>/home/aaron/projects/InteractiveSDK_Linux/Libraries/Linux/x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
+    <PreBuildEvent>
+      <Message>Copying libInteractiveSDK.a To Remote System</Message>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <AdditionalSourcesToCopyMapping>$(SolutionDir)Libraries\Linux\x64\libInteractiveSDK.a:=/home/aaron/projects/$(SolutionName)/Libraries/Linux/x64/libInteractiveSDK.a;%(AdditionalSourcesToCopyMapping)</AdditionalSourcesToCopyMapping>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

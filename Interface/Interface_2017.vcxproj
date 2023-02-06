@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC41EB9C-0664-47EB-B725-0F1F5EDE7949}</ProjectGuid>
+    <RootNamespace>Interface</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Interface</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>
+    </ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x86\</OutDir>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType />
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>
+    </ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x86\</OutDir>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v143</PlatformToolset>
+    <ConfigurationType />
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\2017\x86\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x64\</OutDir>
+    <IntDir>$(Configuration)\2017\x64\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(Configuration)\2017\x86\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Bin_Windows\2017\x64\</OutDir>
+    <IntDir>$(Configuration)\2017\x64\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;MS_VS_COMPILER;_DEBUG;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;MS_VS_COMPILER;_DEBUG;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;MS_VS_COMPILER;WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)Interface\;$(SolutionDir)Interface\Common\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Automation\</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;MS_VS_COMPILER;WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\DSC_ChannelErrors.hpp" />
+    <ClInclude Include="Common\DSC_ChannelEvents.hpp" />
+    <ClInclude Include="Common\DSC_ChannelStates.hpp" />
+    <ClInclude Include="Common\DSC_CipherTypes.hpp" />
+    <ClInclude Include="Common\DSC_DataContainers.hpp" />
+    <ClInclude Include="Common\DSC_IBase.hpp" />
+    <ClInclude Include="Common\DSC_IBlockCipher.hpp" />
+    <ClInclude Include="Common\DSC_IChannel.hpp" />
+    <ClInclude Include="Common\DSC_IChannelEventSink.hpp" />
+    <ClInclude Include="Common\DSC_IComponent.hpp" />
+    <ClInclude Include="Common\DSC_IDataBuffer.hpp" />
+    <ClInclude Include="Common\DSC_IDiagnostics.hpp" />
+    <ClInclude Include="Common\DSC_ILicenseManager.hpp" />
+    <ClInclude Include="Common\DSC_IProtocolData.hpp" />
+    <ClInclude Include="Common\DSC_IDataStore.hpp" />
+    <ClInclude Include="Common\DSC_ISystemIndices.hpp" />
+    <ClInclude Include="Common\DSC_ITextString.hpp" />
+    <ClInclude Include="Common\DSC_ObjectTypes.hpp" />
+    <ClInclude Include="Common\DSC_Parameters.hpp" />
+    <ClInclude Include="Common\DSC_PacketStates.hpp" />
+    <ClInclude Include="Common\DSC_ProtocolTypes.hpp" />
+    <ClInclude Include="DSC_Config.hpp" />
+    <ClInclude Include="DSC_IInteractive.hpp" />
+    <ClInclude Include="DSC_Types.hpp" />
+    <ClInclude Include="DSC_WinDLL.hpp" />
+    <ClInclude Include="DSC_WinLIB.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesBellSquawkStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesCanBypassZoneStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesDuressCodeStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesOneTimeUseStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesRemoteAccessStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesSupervisorStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCredentialsTypes.hpp" />
+    <ClInclude Include="Security\DSC_AlarmTypes.hpp" />
+    <ClInclude Include="Security\DSC_AssignmentStates.hpp" />
+    <ClInclude Include="Security\DSC_AssignmentTypes.hpp" />
+    <ClInclude Include="Security\DSC_CommandOutputReportingStates.hpp" />
+    <ClInclude Include="Security\DSC_CommandOutputStates.hpp" />
+    <ClInclude Include="Security\DSC_CursorTypes.hpp" />
+    <ClInclude Include="Security\DSC_DeviceModuleTypes.hpp" />
+    <ClInclude Include="Security\DSC_FAPTypes.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCode.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCredentials.hpp" />
+    <ClInclude Include="Security\DSC_IAlarmTypeContainer.hpp" />
+    <ClInclude Include="Security\DSC_IAssignmentData.hpp" />
+    <ClInclude Include="Security\DSC_IAssignmentList.hpp" />
+    <ClInclude Include="Security\DSC_IBuzzerDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ICommandOutputDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IEventBufferEntryDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IKeyPressedDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILCDCursorDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILCDUpdateDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILEDStatusDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILifeStyleSettings.hpp" />
+    <ClInclude Include="Security\DSC_IPartition.hpp" />
+    <ClInclude Include="Security\DSC_IProgrammingDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IRepository.hpp" />
+    <ClInclude Include="Security\DSC_IRequestResult.hpp" />
+    <ClInclude Include="Security\DSC_ISecurityEventSink.hpp" />
+    <ClInclude Include="Security\DSC_ISpecificFunctions.hpp" />
+    <ClInclude Include="Security\DSC_ISystemCapabilities.hpp" />
+    <ClInclude Include="Security\DSC_ISystemInformation.hpp" />
+    <ClInclude Include="Security\DSC_ISystemManager.hpp" />
+    <ClInclude Include="Security\DSC_ITroubleData.hpp" />
+    <ClInclude Include="Security\DSC_ITroubleList.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualKeypad.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualKeypadManager.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZone.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZoneManager.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZoneStatus.hpp" />
+    <ClInclude Include="Security\DSC_IZone.hpp" />
+    <ClInclude Include="Security\DSC_IZoneAttributes.hpp" />
+    <ClInclude Include="Security\DSC_LEDTypes.hpp" />
+    <ClInclude Include="Security\DSC_LEDCadences.hpp" />
+    <ClInclude Include="Security\DSC_LifeStyleNotifications.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAlarmMemoryStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAlarmStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionArmedStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAudibleBellStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAudibleBellTypes.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBlankStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBusyStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBuzzerStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBypassStates.hpp" />
+    <ClInclude Include="Security\DSC_DoorChimeEnabledStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionEntryDelayStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionExitDelayStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionQuickExitStates.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCodeAttributes.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCodeManager.hpp" />
+    <ClInclude Include="Security\DSC_IPartitionManager.hpp" />
+    <ClInclude Include="Security\DSC_ISecurityBase.hpp" />
+    <ClInclude Include="Security\DSC_IZoneManager.hpp" />
+    <ClInclude Include="Security\DSC_IPartitionStateData.hpp" />
+    <ClInclude Include="Security\DSC_PartitionReadyStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionTroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingModes.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingSources.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingStates.hpp" />
+    <ClInclude Include="Security\DSC_RequestResultCodes.hpp" />
+    <ClInclude Include="Security\DSC_SecurityDataSelectors.hpp" />
+    <ClInclude Include="Security\DSC_SecurityEventCategories.hpp" />
+    <ClInclude Include="Security\DSC_SecurityEventTypes.hpp" />
+    <ClInclude Include="Security\DSC_TextAttributes.hpp" />
+    <ClInclude Include="Security\DSC_TroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_TroubleTypes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadKeys.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadModes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadTypes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusACTroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusFaultStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusLowBatteryStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusMaskedStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusOpenStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusTamperStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAlarmStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAttributesBypassEnableStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAttributesChimeFunctionStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneBypassStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAlarmInMemoryStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneDelinquencyStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneFaultStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneLowBatteryStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneLowSensitivityStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneMaskedStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneOpenCloseStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneTamperStates.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DSC_IInteractive.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

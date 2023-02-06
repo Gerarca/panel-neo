@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{fb9e8c05-6f5a-41d8-bd77-22fef8a7aa34}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>Interface</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+    <ProjectName>Interface</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <UseOfStl>libstdc++_shared</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <RemoteRootDir>~/projects/$(SolutionName)</RemoteRootDir>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <OutDir>$(SolutionDir)Bin_Linux\ARM\</OutDir>
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin_Linux\x64\</OutDir>
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <OutDir>$(SolutionDir)Bin_Linux\x86\</OutDir>
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <OutDir>$(SolutionDir)Bin_Linux\x86\</OutDir>
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+    <TargetExt>.a</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <OutDir>$(SolutionDir)Bin_Linux\ARM\</OutDir>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</IncludePath>
+    <SourcePath>$(SolutionDir)Interface\;$(SolutionDir)Interface\Security\;$(SolutionDir)Interface\Common\;E:\Visual Studio\2017\includes\;E:\Visual Studio\2017\includes\i386-linux-gnu\;$(IncludePath);$(ISenseIncludePath)</SourcePath>
+    <OutDir>$(SolutionDir)Bin_Linux\x64\</OutDir>
+    <RemoteLinkLocalCopyOutput>false</RemoteLinkLocalCopyOutput>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\DSC_ChannelErrors.hpp" />
+    <ClInclude Include="Common\DSC_ChannelEvents.hpp" />
+    <ClInclude Include="Common\DSC_ChannelStates.hpp" />
+    <ClInclude Include="Common\DSC_CipherTypes.hpp" />
+    <ClInclude Include="Common\DSC_DataContainers.hpp" />
+    <ClInclude Include="Common\DSC_IBase.hpp" />
+    <ClInclude Include="Common\DSC_IBlockCipher.hpp" />
+    <ClInclude Include="Common\DSC_IChannel.hpp" />
+    <ClInclude Include="Common\DSC_IChannelEventSink.hpp" />
+    <ClInclude Include="Common\DSC_IComponent.hpp" />
+    <ClInclude Include="Common\DSC_IDataBuffer.hpp" />
+    <ClInclude Include="Common\DSC_IDiagnostics.hpp" />
+    <ClInclude Include="Common\DSC_ILicenseManager.hpp" />
+    <ClInclude Include="Common\DSC_IProtocolData.hpp" />
+    <ClInclude Include="Common\DSC_IDataStore.hpp" />
+    <ClInclude Include="Common\DSC_ISystemIndices.hpp" />
+    <ClInclude Include="Common\DSC_ITextString.hpp" />
+    <ClInclude Include="Common\DSC_ObjectTypes.hpp" />
+    <ClInclude Include="Common\DSC_Parameters.hpp" />
+    <ClInclude Include="Common\DSC_PacketStates.hpp" />
+    <ClInclude Include="Common\DSC_ProtocolTypes.hpp" />
+    <ClInclude Include="DSC_Config.hpp" />
+    <ClInclude Include="DSC_IInteractive.hpp" />
+    <ClInclude Include="DSC_LinuxLIB.hpp" />
+    <ClInclude Include="DSC_Types.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesBellSquawkStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesCanBypassZoneStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesDuressCodeStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesOneTimeUseStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesRemoteAccessStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCodeAttributesSupervisorStates.hpp" />
+    <ClInclude Include="Security\DSC_AccessCredentialsTypes.hpp" />
+    <ClInclude Include="Security\DSC_AlarmTypes.hpp" />
+    <ClInclude Include="Security\DSC_AssignmentStates.hpp" />
+    <ClInclude Include="Security\DSC_AssignmentTypes.hpp" />
+    <ClInclude Include="Security\DSC_CommandOutputReportingStates.hpp" />
+    <ClInclude Include="Security\DSC_CommandOutputStates.hpp" />
+    <ClInclude Include="Security\DSC_CursorTypes.hpp" />
+    <ClInclude Include="Security\DSC_DeviceModuleTypes.hpp" />
+    <ClInclude Include="Security\DSC_FAPTypes.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCode.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCredentials.hpp" />
+    <ClInclude Include="Security\DSC_IAlarmTypeContainer.hpp" />
+    <ClInclude Include="Security\DSC_IAssignmentData.hpp" />
+    <ClInclude Include="Security\DSC_IAssignmentList.hpp" />
+    <ClInclude Include="Security\DSC_IBuzzerDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ICommandOutputDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IEventBufferEntryDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IKeyPressedDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILCDCursorDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILCDUpdateDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILEDStatusDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_ILifeStyleSettings.hpp" />
+    <ClInclude Include="Security\DSC_IPartition.hpp" />
+    <ClInclude Include="Security\DSC_IProgrammingDataContainer.hpp" />
+    <ClInclude Include="Security\DSC_IRepository.hpp" />
+    <ClInclude Include="Security\DSC_IRequestResult.hpp" />
+    <ClInclude Include="Security\DSC_ISecurityEventSink.hpp" />
+    <ClInclude Include="Security\DSC_ISpecificFunctions.hpp" />
+    <ClInclude Include="Security\DSC_ISystemCapabilities.hpp" />
+    <ClInclude Include="Security\DSC_ISystemInformation.hpp" />
+    <ClInclude Include="Security\DSC_ISystemManager.hpp" />
+    <ClInclude Include="Security\DSC_ITroubleData.hpp" />
+    <ClInclude Include="Security\DSC_ITroubleList.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualKeypad.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualKeypadManager.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZone.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZoneManager.hpp" />
+    <ClInclude Include="Security\DSC_IVirtualZoneStatus.hpp" />
+    <ClInclude Include="Security\DSC_IZone.hpp" />
+    <ClInclude Include="Security\DSC_IZoneAttributes.hpp" />
+    <ClInclude Include="Security\DSC_LEDTypes.hpp" />
+    <ClInclude Include="Security\DSC_LEDCadences.hpp" />
+    <ClInclude Include="Security\DSC_LifeStyleNotifications.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAlarmMemoryStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAlarmStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionArmedStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAudibleBellStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionAudibleBellTypes.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBlankStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBusyStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBuzzerStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionBypassStates.hpp" />
+    <ClInclude Include="Security\DSC_DoorChimeEnabledStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionEntryDelayStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionExitDelayStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionQuickExitStates.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCodeAttributes.hpp" />
+    <ClInclude Include="Security\DSC_IAccessCodeManager.hpp" />
+    <ClInclude Include="Security\DSC_IPartitionManager.hpp" />
+    <ClInclude Include="Security\DSC_ISecurityBase.hpp" />
+    <ClInclude Include="Security\DSC_IZoneManager.hpp" />
+    <ClInclude Include="Security\DSC_IPartitionStateData.hpp" />
+    <ClInclude Include="Security\DSC_PartitionReadyStates.hpp" />
+    <ClInclude Include="Security\DSC_PartitionTroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingModes.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingSources.hpp" />
+    <ClInclude Include="Security\DSC_ProgrammingStates.hpp" />
+    <ClInclude Include="Security\DSC_RequestResultCodes.hpp" />
+    <ClInclude Include="Security\DSC_SecurityDataSelectors.hpp" />
+    <ClInclude Include="Security\DSC_SecurityEventCategories.hpp" />
+    <ClInclude Include="Security\DSC_SecurityEventTypes.hpp" />
+    <ClInclude Include="Security\DSC_TextAttributes.hpp" />
+    <ClInclude Include="Security\DSC_TroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_TroubleTypes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadKeys.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadModes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualKeypadTypes.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusACTroubleStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusFaultStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusLowBatteryStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusMaskedStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusOpenStates.hpp" />
+    <ClInclude Include="Security\DSC_VirtualZoneStatusTamperStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAlarmStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAttributesBypassEnableStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAttributesChimeFunctionStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneBypassStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneAlarmInMemoryStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneDelinquencyStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneFaultStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneLowBatteryStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneLowSensitivityStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneMaskedStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneOpenCloseStates.hpp" />
+    <ClInclude Include="Security\DSC_ZoneTamperStates.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DSC_IInteractive.cpp" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+      <PreprocessorDefinitions>LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <AdditionalOptions>-Wpedantic %(AdditionalOptions)</AdditionalOptions>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <Verbose>true</Verbose>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CLanguageStandard>c89</CLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <AdditionalOptions>-Wpedantic %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MinSize</Optimization>
+      <DebugInformationFormat>None</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Verbose>true</Verbose>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSize</Optimization>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../Interface;../Interface/Common;../Interface/Security;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Verbose>true</Verbose>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MinSize</Optimization>
+      <PreprocessorDefinitions>NDEBUG;LINUX;GCC_COMPILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CLanguageStandard>c89</CLanguageStandard>
+      <CppLanguageStandard>c++98</CppLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Lib>
+      <Verbose>true</Verbose>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

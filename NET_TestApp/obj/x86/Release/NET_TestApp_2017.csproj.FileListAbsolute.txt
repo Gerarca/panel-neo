@@ -1,0 +1,15 @@
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\Bin_Windows\2017\x86\NET_TestApp.exe.config
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\Bin_Windows\2017\x86\NET_TestApp.exe
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp_2017.csproj.AssemblyReference.cache
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp_2017.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmAdd.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmAttributeChange.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmLifeStyle.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmMain.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmParameterValuesEntry.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.frmSecurityBase.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.Properties.Resources.resources
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp_2017.csproj.GenerateResource.cache
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp_2017.csproj.CoreCompileInputs.cache
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp_2017.csproj.CopyComplete
+C:\Users\Gerso\OneDrive\Documentos\Netsocs Software\Panel NEO\InteractiveSDK_Release_2_0_1\NET_TestApp\obj\x86\Release\NET_TestApp.exe
